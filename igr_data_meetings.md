@@ -1,5 +1,4 @@
 # Meeting 1 - Tuesday 29/9/20
-
 ---
 
 - ~10 peeps at first meeting with dan and prof heng, looks like it's chaired by chirs which is exciting
@@ -10,6 +9,5 @@
 
 - extended GLADE catalogue with Martin Hendry 
 
-
-
-wiay = why-ayy 
+# Meeting 2 - Tuesday 6/20/20
+---

@@ -60,3 +60,7 @@
 - Steps to do in future:
   - define own activation function
   - create own loss functions
+
+# links:
+
+https://join.slack.com/t/phas-ml/shared_invite/zt-h2hniuxz-ZPI_8m49OW3m30TZPbYILg

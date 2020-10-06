@@ -10,4 +10,3 @@
 
 http://alexlenail.me/NN-SVG/LeNet.html for drawing diagrams
 
-https://join.slack.com/t/phas-ml/shared_invite/zt-h2hniuxz-ZPI_8m49OW3m30TZPbYILg
