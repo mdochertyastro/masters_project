@@ -69,7 +69,7 @@
 - find out what a CVAE is (seems VERY IMPORTANT)
 - try install vit with venv and pip specifal in native python
 - learn bilby
-- focus more on literature
+- focus more on literature - soure the 3 papers chirs mentioned above plus a newer review and another one that is one step before public access!
 - research algorithm/framework of nested smapling (use w/ bilby)
 - set up proper to-do system to start shifting away from handwritten notes.
 - start daily jounral etc or maybe a week per file to easily search for weekly tasks type of thing
