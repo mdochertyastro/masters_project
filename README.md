@@ -23,6 +23,8 @@ Project webspace organisation:
 
 My initial plan: (8/10/20)
 
+```text
+
 PROJECT DIRECTORY
         |
         '------> Project status dir (This repo - version controlled w/ Git)
@@ -39,7 +41,7 @@ PROJECT DIRECTORY
         |
         '------> Programming dir (Version controlled from another repo - all my jupyter notebooks for running ML and vit scripts from vscode jupyter server)
 
-
+```
 
 
 
