@@ -62,8 +62,8 @@
 
 - literature work:
   - Shultz? Grav wave living reviews
-    Catalog 01 02 (11 detections from the two runs combined) GWTCL
-
+  - Catalog 01 02 (11 detections from the two runs combined) GWTCL
+  - https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.123017  <-- this is for new first project
 ## Post-meeting tasks:
 
 - find out what a CVAE is (seems VERY IMPORTANT)
