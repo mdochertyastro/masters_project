@@ -1,5 +1,4 @@
 # Matthew Docherty - Msci Project Status Folder
----
 
 ## Repo to keep track of (non-programming) project general status. 
 
@@ -23,9 +22,7 @@ Purpose:
 Project webspace organisation:
 
 My initial plan: (8/10/20)
-
 ```text
-
 PROJECT DIRECTORY
         |
         '------> Project status dir (This repo - version controlled w/ Git)
