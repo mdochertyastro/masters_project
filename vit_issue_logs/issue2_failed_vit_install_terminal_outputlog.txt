@@ -1,0 +1,490 @@
+matthew@goliath:~/Desktop/vitamin_local$ conda create --name=vit_env_local python=3.6
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.3
+  latest version: 4.8.5
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/matthew/anaconda3/envs/vit_env_local
+
+  added / updated specs:
+    - python=3.6
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.6.20          |   py36h9f0ad1d_0         151 KB  conda-forge
+    python-3.6.11              |h4d41432_2_cpython        34.2 MB  conda-forge
+    python_abi-3.6             |          1_cp36m           4 KB  conda-forge
+    setuptools-49.6.0          |   py36h9f0ad1d_1         934 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        35.3 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-1_gnu
+  ca-certificates    conda-forge/linux-64::ca-certificates-2020.6.20-hecda079_0
+  certifi            conda-forge/linux-64::certifi-2020.6.20-py36h9f0ad1d_0
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.35-h769bd43_9
+  libffi             conda-forge/linux-64::libffi-3.2.1-he1b5a44_1007
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-9.3.0-h5dbcf3e_17
+  libgomp            conda-forge/linux-64::libgomp-9.3.0-h5dbcf3e_17
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-9.3.0-h2ae2ef3_17
+  ncurses            conda-forge/linux-64::ncurses-6.2-he1b5a44_1
+  openssl            conda-forge/linux-64::openssl-1.1.1h-h516909a_0
+  pip                conda-forge/noarch::pip-20.2.3-py_0
+  python             conda-forge/linux-64::python-3.6.11-h4d41432_2_cpython
+  python_abi         conda-forge/linux-64::python_abi-3.6-1_cp36m
+  readline           conda-forge/linux-64::readline-8.0-he28a2e2_2
+  setuptools         conda-forge/linux-64::setuptools-49.6.0-py36h9f0ad1d_1
+  sqlite             conda-forge/linux-64::sqlite-3.33.0-h4cf870e_1
+  tk                 conda-forge/linux-64::tk-8.6.10-hed695b0_1
+  wheel              conda-forge/noarch::wheel-0.35.1-pyh9f0ad1d_0
+  xz                 conda-forge/linux-64::xz-5.2.5-h516909a_1
+  zlib               conda-forge/linux-64::zlib-1.2.11-h516909a_1009
+
+
+Proceed ([y]/n)? 
+
+
+Downloading and Extracting Packages
+python_abi-3.6       | 4 KB      | ################################################################################################################################################# | 100% 
+certifi-2020.6.20    | 151 KB    | ################################################################################################################################################# | 100% 
+python-3.6.11        | 34.2 MB   | ################################################################################################################################################# | 100% 
+setuptools-49.6.0    | 934 KB    | ################################################################################################################################################# | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate vit_env_local
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+matthew@goliath:~/Desktop/vitamin_local$ conda activate vit_env_local
+(vit_env_local) matthew@goliath:~/Desktop/vitamin_local$ pip install --upgrade pip
+Requirement already up-to-date: pip in /home/matthew/anaconda3/envs/vit_env_local/lib/python3.6/site-packages (20.2.3)
+
+(vit_env_local) matthew@goliath:~/Desktop/vitamin_local$ pip install numpy==1.18.4
+Collecting numpy==1.18.4
+  Downloading numpy-1.18.4-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+     |████████████████████████████████| 20.2 MB 14.0 MB/s 
+Installing collected packages: numpy
+Successfully installed numpy-1.18.4
+
+(vit_env_local) matthew@goliath:~/Desktop/vitamin_local$ pip install vitamin-b
+Collecting vitamin-b
+  Downloading vitamin_b-0.2.12.tar.gz (54 kB)
+     |████████████████████████████████| 54 kB 884 kB/s 
+Collecting universal-divergence
+  Downloading universal-divergence-0.2.0.tar.gz (2.7 kB)
+Collecting absl-py
+  Downloading absl_py-0.10.0-py3-none-any.whl (127 kB)
+     |████████████████████████████████| 127 kB 2.1 MB/s 
+Collecting asn1crypto
+  Downloading asn1crypto-1.4.0-py2.py3-none-any.whl (104 kB)
+     |████████████████████████████████| 104 kB 7.2 MB/s 
+Collecting astor
+  Downloading astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Collecting astroplan
+  Downloading astroplan-0.6-py3-none-any.whl (100 kB)
+     |████████████████████████████████| 100 kB 4.8 MB/s 
+Collecting astropy
+  Downloading astropy-4.0.1.post1-cp36-cp36m-manylinux1_x86_64.whl (6.5 MB)
+     |████████████████████████████████| 6.5 MB 9.2 MB/s 
+Collecting astropy-healpix
+  Downloading astropy_healpix-0.5-cp36-cp36m-manylinux2010_x86_64.whl (204 kB)
+     |████████████████████████████████| 204 kB 7.9 MB/s 
+Collecting astroquery
+  Downloading astroquery-0.4.1.tar.gz (6.5 MB)
+     |████████████████████████████████| 6.5 MB 9.0 MB/s 
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.9.3-py3-none-any.whl (115 kB)
+     |████████████████████████████████| 115 kB 3.4 MB/s 
+Collecting bilby
+  Downloading bilby-1.0.2.tar.gz (11.6 MB)
+     |████████████████████████████████| 11.6 MB 5.0 MB/s 
+Collecting cachetools
+  Downloading cachetools-4.1.1-py3-none-any.whl (10 kB)
+Requirement already satisfied: certifi in /home/matthew/anaconda3/envs/vit_env_local/lib/python3.6/site-packages (from vitamin-b) (2020.6.20)
+Collecting cffi
+  Downloading cffi-1.14.3-cp36-cp36m-manylinux1_x86_64.whl (400 kB)
+     |████████████████████████████████| 400 kB 14.7 MB/s 
+Collecting chardet
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 13.0 MB/s 
+Collecting cloudpickle
+  Downloading cloudpickle-1.6.0-py3-none-any.whl (23 kB)
+Collecting corner
+  Downloading corner-2.1.0-py2.py3-none-any.whl (11 kB)
+Collecting cpnest
+  Downloading cpnest-0.9.9.tar.gz (24 kB)
+Collecting cryptography
+  Downloading cryptography-3.1.1-cp35-abi3-manylinux2010_x86_64.whl (2.6 MB)
+     |████████████████████████████████| 2.6 MB 409 kB/s 
+Collecting cycler
+  Using cached cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting Cython
+  Using cached Cython-0.29.21-cp36-cp36m-manylinux1_x86_64.whl (2.0 MB)
+Collecting decorator
+  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting deepdish
+  Downloading deepdish-0.3.6-py2.py3-none-any.whl (36 kB)
+Collecting dill
+  Downloading dill-0.3.2.zip (177 kB)
+     |████████████████████████████████| 177 kB 8.3 MB/s 
+Collecting dqsegdb2
+  Downloading dqsegdb2-1.0.1-py2.py3-none-any.whl (21 kB)
+Collecting dynesty
+  Downloading dynesty-1.0.1-py2.py3-none-any.whl (86 kB)
+     |████████████████████████████████| 86 kB 3.4 MB/s 
+Collecting emcee
+  Downloading emcee-3.0.2-py2.py3-none-any.whl (41 kB)
+     |████████████████████████████████| 41 kB 465 kB/s 
+Collecting entrypoints
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+     |████████████████████████████████| 829 kB 20.1 MB/s 
+Collecting gast
+  Downloading gast-0.4.0-py3-none-any.whl (9.8 kB)
+Collecting google-auth
+  Downloading google_auth-1.22.1-py2.py3-none-any.whl (114 kB)
+     |████████████████████████████████| 114 kB 7.9 MB/s 
+Collecting google-auth-oauthlib
+  Downloading google_auth_oauthlib-0.4.1-py2.py3-none-any.whl (18 kB)
+Collecting google-pasta
+  Downloading google_pasta-0.2.0-py3-none-any.whl (57 kB)
+     |████████████████████████████████| 57 kB 2.9 MB/s 
+Collecting grpcio
+  Downloading grpcio-1.32.0-cp36-cp36m-manylinux2014_x86_64.whl (3.8 MB)
+     |████████████████████████████████| 3.8 MB 10.9 MB/s 
+Collecting gwdatafind
+  Downloading gwdatafind-1.0.4-py2.py3-none-any.whl (38 kB)
+Collecting gwosc
+  Downloading gwosc-0.5.6-py3-none-any.whl (32 kB)
+Collecting gwpy
+  Downloading gwpy-2.0.1-py2.py3-none-any.whl (1.4 MB)
+     |████████████████████████████████| 1.4 MB 14.6 MB/s 
+Collecting h5py
+  Downloading h5py-2.10.0-cp36-cp36m-manylinux1_x86_64.whl (2.9 MB)
+     |████████████████████████████████| 2.9 MB 7.4 MB/s 
+Collecting healpy
+  Downloading healpy-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (15.8 MB)
+     |████████████████████████████████| 15.8 MB 7.6 MB/s 
+Collecting html5lib
+  Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+     |████████████████████████████████| 112 kB 13.2 MB/s 
+Collecting idna
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 3.5 MB/s 
+Collecting jeepney
+  Downloading jeepney-0.4.3-py3-none-any.whl (21 kB)
+Collecting joblib
+  Downloading joblib-0.17.0-py3-none-any.whl (301 kB)
+     |████████████████████████████████| 301 kB 15.0 MB/s 
+Collecting Keras
+  Downloading Keras-2.4.3-py2.py3-none-any.whl (36 kB)
+Collecting Keras-Applications
+  Downloading Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+     |████████████████████████████████| 50 kB 4.0 MB/s 
+Collecting Keras-Preprocessing
+  Downloading Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 882 kB/s 
+Collecting keyring
+  Downloading keyring-21.4.0-py3-none-any.whl (31 kB)
+Collecting kiwisolver
+  Downloading kiwisolver-1.2.0-cp36-cp36m-manylinux1_x86_64.whl (88 kB)
+     |████████████████████████████████| 88 kB 5.1 MB/s 
+Collecting lalsuite
+  Downloading lalsuite-6.77-cp36-cp36m-manylinux2014_x86_64.whl (27.2 MB)
+     |████████████████████████████████| 27.2 MB 6.6 MB/s 
+Collecting ligo-gracedb
+  Downloading ligo-gracedb-2.7.0.tar.gz (2.3 MB)
+     |████████████████████████████████| 2.3 MB 6.1 MB/s 
+Collecting ligo-segments
+  Downloading ligo-segments-1.2.0.tar.gz (48 kB)
+     |████████████████████████████████| 48 kB 3.0 MB/s 
+Collecting ligo.skymap
+  Downloading ligo.skymap-0.5.0-cp36-abi3-manylinux2014_x86_64.whl (19.3 MB)
+     |████████████████████████████████| 19.3 MB 17.0 MB/s 
+Collecting ligotimegps
+  Downloading ligotimegps-2.0.1-py2.py3-none-any.whl (19 kB)
+Collecting lscsoft-glue
+  Downloading lscsoft-glue-2.0.0.tar.gz (1.6 MB)
+     |████████████████████████████████| 1.6 MB 14.7 MB/s 
+Collecting Markdown
+  Downloading Markdown-3.3-py3-none-any.whl (94 kB)
+     |████████████████████████████████| 94 kB 1.8 MB/s 
+Collecting matplotlib
+  Downloading matplotlib-3.3.2-cp36-cp36m-manylinux1_x86_64.whl (11.6 MB)
+     |████████████████████████████████| 11.6 MB 9.1 MB/s 
+Collecting mock
+  Downloading mock-4.0.2-py3-none-any.whl (28 kB)
+Collecting networkx
+  Downloading networkx-2.5-py3-none-any.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 10.6 MB/s 
+Collecting numexpr
+  Downloading numexpr-2.7.1-cp36-cp36m-manylinux1_x86_64.whl (162 kB)
+     |████████████████████████████████| 162 kB 10.0 MB/s 
+Requirement already satisfied: numpy in /home/matthew/anaconda3/envs/vit_env_local/lib/python3.6/site-packages (from vitamin-b) (1.18.4)
+Collecting oauthlib
+  Downloading oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)
+     |████████████████████████████████| 147 kB 9.2 MB/s 
+Collecting opt-einsum
+  Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+     |████████████████████████████████| 65 kB 2.1 MB/s 
+Collecting pandas
+  Downloading pandas-1.1.3-cp36-cp36m-manylinux1_x86_64.whl (9.5 MB)
+     |████████████████████████████████| 9.5 MB 8.2 MB/s 
+Collecting patsy
+  Downloading patsy-0.5.1-py2.py3-none-any.whl (231 kB)
+     |████████████████████████████████| 231 kB 10.2 MB/s 
+Collecting Pillow
+  Downloading Pillow-7.2.0-cp36-cp36m-manylinux1_x86_64.whl (2.2 MB)
+     |████████████████████████████████| 2.2 MB 14.4 MB/s 
+Collecting protobuf
+  Downloading protobuf-3.13.0-cp36-cp36m-manylinux1_x86_64.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 11.4 MB/s 
+Collecting ptemcee
+  Downloading ptemcee-1.0.0.tar.gz (17 kB)
+Collecting pyaml
+  Downloading pyaml-20.4.0-py2.py3-none-any.whl (17 kB)
+Collecting pyasn1
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 3.4 MB/s 
+Collecting pyasn1-modules
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB 12.8 MB/s 
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting pymc3
+  Downloading pymc3-3.9.3-py3-none-any.whl (1.9 MB)
+     |████████████████████████████████| 1.9 MB 15.6 MB/s 
+Collecting pyOpenSSL
+  Downloading pyOpenSSL-19.1.0-py2.py3-none-any.whl (53 kB)
+     |████████████████████████████████| 53 kB 1.5 MB/s 
+Collecting pyparsing
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting python-dateutil
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting python-ligo-lw
+  Downloading python-ligo-lw-1.6.0.tar.gz (2.3 MB)
+     |████████████████████████████████| 2.3 MB 8.2 MB/s 
+Collecting pytz
+  Using cached pytz-2020.1-py2.py3-none-any.whl (510 kB)
+Collecting PyYAML
+  Downloading PyYAML-5.3.1.tar.gz (269 kB)
+     |████████████████████████████████| 269 kB 11.1 MB/s 
+Collecting reproject
+  Downloading reproject-0.7.1-cp36-cp36m-manylinux2010_x86_64.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 10.8 MB/s 
+Collecting requests
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 256 kB/s 
+Collecting requests-oauthlib
+  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Collecting rsa
+  Downloading rsa-4.6-py3-none-any.whl (47 kB)
+     |████████████████████████████████| 47 kB 3.5 MB/s 
+Collecting scikit-learn
+  Downloading scikit_learn-0.23.2-cp36-cp36m-manylinux1_x86_64.whl (6.8 MB)
+     |████████████████████████████████| 6.8 MB 10.6 MB/s 
+Collecting scikit-optimize
+  Downloading scikit_optimize-0.8.1-py2.py3-none-any.whl (101 kB)
+     |████████████████████████████████| 101 kB 4.9 MB/s 
+Collecting scipy
+  Using cached scipy-1.5.2-cp36-cp36m-manylinux1_x86_64.whl (25.9 MB)
+Collecting seaborn
+  Downloading seaborn-0.11.0-py3-none-any.whl (283 kB)
+     |████████████████████████████████| 283 kB 16.0 MB/s 
+Collecting SecretStorage
+  Downloading SecretStorage-3.1.2-py3-none-any.whl (14 kB)
+Collecting six
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting soupsieve
+  Downloading soupsieve-2.0.1-py3-none-any.whl (32 kB)
+Collecting tables
+  Downloading tables-3.6.1-cp36-cp36m-manylinux1_x86_64.whl (4.3 MB)
+     |████████████████████████████████| 4.3 MB 13.6 MB/s 
+Collecting tensorboard
+  Downloading tensorboard-2.3.0-py3-none-any.whl (6.8 MB)
+     |████████████████████████████████| 6.8 MB 10.6 MB/s 
+Collecting tensorflow==2.1.0
+  Downloading tensorflow-2.1.0-cp36-cp36m-manylinux2010_x86_64.whl (421.8 MB)
+     |████████████████████████████████| 421.8 MB 59 kB/s 
+Collecting tensorflow-estimator
+  Downloading tensorflow_estimator-2.3.0-py2.py3-none-any.whl (459 kB)
+     |████████████████████████████████| 459 kB 718 kB/s 
+Collecting tensorflow-probability==0.9.0
+  Downloading tensorflow_probability-0.9.0-py2.py3-none-any.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 11.1 MB/s 
+Collecting termcolor
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+Collecting tqdm
+  Downloading tqdm-4.50.1-py2.py3-none-any.whl (70 kB)
+     |████████████████████████████████| 70 kB 3.8 MB/s 
+Collecting urllib3
+  Downloading urllib3-1.25.10-py2.py3-none-any.whl (127 kB)
+     |████████████████████████████████| 127 kB 14.5 MB/s 
+Collecting webencodings
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting Werkzeug
+  Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+     |████████████████████████████████| 298 kB 15.3 MB/s 
+Collecting wrapt
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+Collecting setuptools-scm
+  Downloading setuptools_scm-4.1.2-py2.py3-none-any.whl (27 kB)
+Requirement already satisfied: wheel in /home/matthew/anaconda3/envs/vit_env_local/lib/python3.6/site-packages (from corner->vitamin-b) (0.35.1)
+Requirement already satisfied: setuptools>=40.6.0 in /home/matthew/anaconda3/envs/vit_env_local/lib/python3.6/site-packages (from corner->vitamin-b) (49.6.0.post20200917)
+Collecting importlib-metadata; python_version < "3.8"
+  Downloading importlib_metadata-2.0.0-py2.py3-none-any.whl (31 kB)
+Collecting importlib-resources; python_version < "3.7"
+  Downloading importlib_resources-3.0.0-py2.py3-none-any.whl (23 kB)
+Collecting contextvars; python_version < "3.7"
+  Downloading contextvars-2.4.tar.gz (9.6 kB)
+Collecting dataclasses; python_version < "3.7"
+  Downloading dataclasses-0.7-py3-none-any.whl (18 kB)
+Collecting fastprogress>=0.2.0
+  Downloading fastprogress-1.0.0-py3-none-any.whl (12 kB)
+Collecting theano>=1.0.5
+  Downloading Theano-1.0.5.tar.gz (2.8 MB)
+     |████████████████████████████████| 2.8 MB 16.5 MB/s 
+Collecting arviz>=0.9.0
+  Downloading arviz-0.10.0-py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 15.6 MB/s 
+Collecting typing-extensions>=3.7.4
+  Downloading typing_extensions-3.7.4.3-py3-none-any.whl (22 kB)
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.7.0-py3-none-any.whl (779 kB)
+     |████████████████████████████████| 779 kB 10.0 MB/s 
+Collecting zipp>=0.5
+  Downloading zipp-3.3.0-py3-none-any.whl (5.3 kB)
+Collecting immutables>=0.9
+  Downloading immutables-0.14-cp36-cp36m-manylinux1_x86_64.whl (98 kB)
+     |████████████████████████████████| 98 kB 2.4 MB/s 
+Collecting netcdf4
+  Downloading netCDF4-1.5.4-cp36-cp36m-manylinux1_x86_64.whl (4.3 MB)
+     |████████████████████████████████| 4.3 MB 681 kB/s 
+Collecting xarray>=0.16.1
+  Downloading xarray-0.16.1-py3-none-any.whl (720 kB)
+     |████████████████████████████████| 720 kB 10.0 MB/s 
+Collecting packaging
+  Using cached packaging-20.4-py2.py3-none-any.whl (37 kB)
+Collecting cftime
+  Downloading cftime-1.2.1-cp36-cp36m-manylinux1_x86_64.whl (287 kB)
+     |████████████████████████████████| 287 kB 12.2 MB/s 
+Building wheels for collected packages: vitamin-b, universal-divergence, astroquery, bilby, cpnest, dill, future, ligo-gracedb, ligo-segments, lscsoft-glue, ptemcee, python-ligo-lw, PyYAML, termcolor, wrapt, contextvars, theano
+  Building wheel for vitamin-b (setup.py) ... done
+  Created wheel for vitamin-b: filename=vitamin_b-0.2.12-py3-none-any.whl size=61214 sha256=861d43344df97d2f9bedbb04e8a81de5779526ef7fc199be5c18e77efe3a68df
+  Stored in directory: /home/matthew/.cache/pip/wheels/c2/2a/0d/744babf3b809dfb6fe04184d55ca4efeac6b14c4c8275d166b
+  Building wheel for universal-divergence (setup.py) ... done
+  Created wheel for universal-divergence: filename=universal_divergence-0.2.0-py3-none-any.whl size=2830 sha256=6bf4f70f40cfac0561db72ff705e39fd2a7bf1186c6eebb60a8cd78653790557
+  Stored in directory: /home/matthew/.cache/pip/wheels/80/84/f0/eb2e40b5fa19fe7302aa4accc73ec1aa58433fc57fd61ba9d0
+  Building wheel for astroquery (setup.py) ... done
+  Created wheel for astroquery: filename=astroquery-0.4.1-py3-none-any.whl size=3831872 sha256=70e00cd4edf9fda130be7bbee500c37044bed013bb26ef6449751c33924309c1
+  Stored in directory: /home/matthew/.cache/pip/wheels/70/78/91/a96dca7e08bfa188b541579b1a1af571354f93366dd0d69807
+  Building wheel for bilby (setup.py) ... done
+  Created wheel for bilby: filename=bilby-1.0.2-py3-none-any.whl size=2181577 sha256=4a02bc03e5b30a849dec2f9534fd909d1ec9720e82d52e6ed09c105d8dd9c577
+  Stored in directory: /home/matthew/.cache/pip/wheels/cf/77/54/00b34ca711998e113d04e8c645ffa3b0060bd951ec641de4b3
+  Building wheel for cpnest (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/matthew/anaconda3/envs/vit_env_local/bin/python3.6 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-vn_oh_t_/cpnest/setup.py'"'"'; __file__='"'"'/tmp/pip-install-vn_oh_t_/cpnest/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-ni_6dh50
+       cwd: /tmp/pip-install-vn_oh_t_/cpnest/
+  Complete output (24 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/model.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/plot.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/proposal.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/sampler.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/cpnest.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/nest2pos.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/logger.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/NestedSampling.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/__init__.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/parameter.pyx -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/parameter.pxd -> build/lib.linux-x86_64-3.6/cpnest
+  running build_ext
+  building 'cpnest.parameter' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/cpnest
+  gcc -pthread -B /home/matthew/anaconda3/envs/vit_env_local/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Icpnest -I/home/matthew/anaconda3/envs/vit_env_local/include/python3.6m -I/home/matthew/anaconda3/envs/vit_env_local/lib/python3.6/site-packages/numpy/core/include -c cpnest/parameter.c -o build/temp.linux-x86_64-3.6/cpnest/parameter.o
+  gcc: error: cpnest/parameter.c: No such file or directory
+  error: command 'gcc' failed with exit status 1
+  ----------------------------------------
+  ERROR: Failed building wheel for cpnest
+  Running setup.py clean for cpnest
+  Building wheel for dill (setup.py) ... done
+  Created wheel for dill: filename=dill-0.3.2-py3-none-any.whl size=78912 sha256=d737617aba455c74caeb36064deec0dea7119381fc1afbf4fc61f492ebcdaa82
+  Stored in directory: /home/matthew/.cache/pip/wheels/02/49/cf/660924cd9bc5fcddc3a0246fe39800c83028d3ccea244de352
+  Building wheel for future (setup.py) ... done
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491059 sha256=dd14bf2a3da28406d815b241fcd1d0a7748bc4704e666e1f6187998ba9acca4f
+  Stored in directory: /home/matthew/.cache/pip/wheels/6e/9c/ed/4499c9865ac1002697793e0ae05ba6be33553d098f3347fb94
+  Building wheel for ligo-gracedb (setup.py) ... done
+  Created wheel for ligo-gracedb: filename=ligo_gracedb-2.7.0-py2.py3-none-any.whl size=2301504 sha256=f1375fd108c361b9562543fb2688e8661157a117f0037d35bd1f44478ce191da
+  Stored in directory: /home/matthew/.cache/pip/wheels/37/b2/48/a77cd267c62ad6bd6b1285e9d84a8f8a231998fa18f235d676
+  Building wheel for ligo-segments (setup.py) ... done
+  Created wheel for ligo-segments: filename=ligo_segments-1.2.0-cp36-cp36m-linux_x86_64.whl size=96694 sha256=026f1c915dac19d4c98654f1063e7328f3eb9c06019bbc788aeee1a1d3d5bb3a
+  Stored in directory: /home/matthew/.cache/pip/wheels/8c/a8/f2/0bbd4c626ebca62b03d9897df74113c3748ce2d67af0b51073
+  Building wheel for lscsoft-glue (setup.py) ... done
+  Created wheel for lscsoft-glue: filename=lscsoft_glue-2.0.0-cp36-cp36m-linux_x86_64.whl size=420066 sha256=c0ea62e6cc23b716ca491da6901dcbbebfb22740895a9150806e19b886ce285a
+  Stored in directory: /home/matthew/.cache/pip/wheels/8f/ff/f6/1638318e640c6847dac798c3e20a5a8b5ddf88077bf3343dc4
+  Building wheel for ptemcee (setup.py) ... done
+  Created wheel for ptemcee: filename=ptemcee-1.0.0-py3-none-any.whl size=18549 sha256=3ecde90c00e1e0ecfc54d436ba4efd44a86c74330984003026fbc32108ed91b4
+  Stored in directory: /home/matthew/.cache/pip/wheels/ba/c3/e0/ac1d1c87d9ba4a44c28b8ff6a2da6890a02098bf9546152971
+  Building wheel for python-ligo-lw (setup.py) ... done
+  Created wheel for python-ligo-lw: filename=python_ligo_lw-1.6.0-cp36-cp36m-linux_x86_64.whl size=181286 sha256=5ee5461592500268f813ecfad8805b7d4ff6f1fd9be24fadfcef9e21e415db4d
+  Stored in directory: /home/matthew/.cache/pip/wheels/b2/81/be/b4d916ad8976ef27f7463d1619290ee2d2d0bd5b5400153d97
+  Building wheel for PyYAML (setup.py) ... done
+  Created wheel for PyYAML: filename=PyYAML-5.3.1-cp36-cp36m-linux_x86_64.whl size=44619 sha256=e37c6c28f649f4d5f2417c2b807bf3ea927062710081464843e27582f50716e7
+  Stored in directory: /home/matthew/.cache/pip/wheels/e5/9d/ad/2ee53cf262cba1ffd8afe1487eef788ea3f260b7e6232a80fc
+  Building wheel for termcolor (setup.py) ... done
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=dc6cbb57f02dd482e9070686a98a429e892307ab90d019f8aa39f7885202abc0
+  Stored in directory: /home/matthew/.cache/pip/wheels/93/2a/eb/e58dbcbc963549ee4f065ff80a59f274cc7210b6eab962acdc
+  Building wheel for wrapt (setup.py) ... done
+  Created wheel for wrapt: filename=wrapt-1.12.1-cp36-cp36m-linux_x86_64.whl size=76017 sha256=8cb767e0affdfb2cb20fa33db6a56069184fd4a539d895f1c5d9571d01bebd3d
+  Stored in directory: /home/matthew/.cache/pip/wheels/32/42/7f/23cae9ff6ef66798d00dc5d659088e57dbba01566f6c60db63
+  Building wheel for contextvars (setup.py) ... done
+  Created wheel for contextvars: filename=contextvars-2.4-py3-none-any.whl size=7665 sha256=46c7af36c4d90c867d7820303db1c51500b1627c4093eec1c67dffabd674ad5f
+  Stored in directory: /home/matthew/.cache/pip/wheels/41/11/53/911724983aa48deb94792432e14e518447212dd6c5477d49d3
+  Building wheel for theano (setup.py) ... done
+  Created wheel for theano: filename=Theano-1.0.5-py3-none-any.whl size=2668095 sha256=a714c73f6d7beff6551d3a9adb1052e37847694a39fb92cc38b347ce32a2e58a
+  Stored in directory: /home/matthew/.cache/pip/wheels/7f/80/57/2970ddd2e4961d84fb0d58196f4965deead046d29e08693e73
+Successfully built vitamin-b universal-divergence astroquery bilby dill future ligo-gracedb ligo-segments lscsoft-glue ptemcee python-ligo-lw PyYAML termcolor wrapt contextvars theano
+Failed to build cpnest
+Installing collected packages: scipy, joblib, universal-divergence, six, absl-py, asn1crypto, astor, pytz, astropy, astroplan, astropy-healpix, chardet, urllib3, idna, requests, jeepney, pycparser, cffi, cryptography, SecretStorage, zipp, importlib-metadata, keyring, soupsieve, beautifulsoup4, webencodings, html5lib, astroquery, future, python-dateutil, cycler, pyparsing, Pillow, kiwisolver, matplotlib, dynesty, emcee, setuptools-scm, corner, dill, pandas, tqdm, bilby, cachetools, cloudpickle, Cython, cpnest, decorator, numexpr, tables, deepdish, pyOpenSSL, ligo-segments, gwdatafind, dqsegdb2, entrypoints, gast, pyasn1, rsa, pyasn1-modules, google-auth, oauthlib, requests-oauthlib, google-auth-oauthlib, google-pasta, grpcio, gwosc, ligotimegps, h5py, gwpy, healpy, PyYAML, Keras, Keras-Applications, Keras-Preprocessing, lscsoft-glue, importlib-resources, lalsuite, ligo-gracedb, python-ligo-lw, networkx, reproject, ptemcee, ligo.skymap, Markdown, mock, opt-einsum, patsy, protobuf, pyaml, immutables, contextvars, dataclasses, fastprogress, theano, cftime, netcdf4, xarray, packaging, arviz, typing-extensions, pymc3, threadpoolctl, scikit-learn, scikit-optimize, seaborn, tensorboard-plugin-wit, Werkzeug, tensorboard, termcolor, tensorflow-estimator, wrapt, tensorflow, tensorflow-probability, vitamin-b
+    Running setup.py install for cpnest ... done
+  DEPRECATION: cpnest was installed using the legacy 'setup.py install' method, because a wheel could not be built for it. pip 21.0 will remove support for this functionality. A possible replacement is to fix the wheel build issue reported above. You can find discussion regarding this at https://github.com/pypa/pip/issues/8368.
+ERROR: After October 2020 you may experience errors when installing or updating packages. This is because pip will change the way that it resolves dependency conflicts.
+
+We recommend you use --use-feature=2020-resolver to test your packages with the new resolver before it becomes the default.
+
+tensorflow 2.1.0 requires gast==0.2.2, but you'll have gast 0.4.0 which is incompatible.
+tensorflow 2.1.0 requires scipy==1.4.1; python_version >= "3", but you'll have scipy 1.5.2 which is incompatible.
+tensorflow 2.1.0 requires tensorboard<2.2.0,>=2.1.0, but you'll have tensorboard 2.3.0 which is incompatible.
+tensorflow 2.1.0 requires tensorflow-estimator<2.2.0,>=2.1.0rc0, but you'll have tensorflow-estimator 2.3.0 which is incompatible.
+Successfully installed Cython-0.29.21 Keras-2.4.3 Keras-Applications-1.0.8 Keras-Preprocessing-1.1.2 Markdown-3.3 Pillow-7.2.0 PyYAML-5.3.1 SecretStorage-3.1.2 Werkzeug-1.0.1 absl-py-0.10.0 arviz-0.10.0 asn1crypto-1.4.0 astor-0.8.1 astroplan-0.6 astropy-4.0.1.post1 astropy-healpix-0.5 astroquery-0.4.1 beautifulsoup4-4.9.3 bilby-1.0.2 cachetools-4.1.1 cffi-1.14.3 cftime-1.2.1 chardet-3.0.4 cloudpickle-1.6.0 contextvars-2.4 corner-2.1.0 cpnest-0.9.9 cryptography-3.1.1 cycler-0.10.0 dataclasses-0.7 decorator-4.4.2 deepdish-0.3.6 dill-0.3.2 dqsegdb2-1.0.1 dynesty-1.0.1 emcee-3.0.2 entrypoints-0.3 fastprogress-1.0.0 future-0.18.2 gast-0.4.0 google-auth-1.22.1 google-auth-oauthlib-0.4.1 google-pasta-0.2.0 grpcio-1.32.0 gwdatafind-1.0.4 gwosc-0.5.6 gwpy-2.0.1 h5py-2.10.0 healpy-1.14.0 html5lib-1.1 idna-2.10 immutables-0.14 importlib-metadata-2.0.0 importlib-resources-3.0.0 jeepney-0.4.3 joblib-0.17.0 keyring-21.4.0 kiwisolver-1.2.0 lalsuite-6.77 ligo-gracedb-2.7.0 ligo-segments-1.2.0 ligo.skymap-0.5.0 ligotimegps-2.0.1 lscsoft-glue-2.0.0 matplotlib-3.3.2 mock-4.0.2 netcdf4-1.5.4 networkx-2.5 numexpr-2.7.1 oauthlib-3.1.0 opt-einsum-3.3.0 packaging-20.4 pandas-1.1.3 patsy-0.5.1 protobuf-3.13.0 ptemcee-1.0.0 pyOpenSSL-19.1.0 pyaml-20.4.0 pyasn1-0.4.8 pyasn1-modules-0.2.8 pycparser-2.20 pymc3-3.9.3 pyparsing-2.4.7 python-dateutil-2.8.1 python-ligo-lw-1.6.0 pytz-2020.1 reproject-0.7.1 requests-2.24.0 requests-oauthlib-1.3.0 rsa-4.6 scikit-learn-0.23.2 scikit-optimize-0.8.1 scipy-1.5.2 seaborn-0.11.0 setuptools-scm-4.1.2 six-1.15.0 soupsieve-2.0.1 tables-3.6.1 tensorboard-2.3.0 tensorboard-plugin-wit-1.7.0 tensorflow-2.1.0 tensorflow-estimator-2.3.0 tensorflow-probability-0.9.0 termcolor-1.1.0 theano-1.0.5 threadpoolctl-2.1.0 tqdm-4.50.1 typing-extensions-3.7.4.3 universal-divergence-0.2.0 urllib3-1.25.10 vitamin-b-0.2.12 webencodings-0.5.1 wrapt-1.12.1 xarray-0.16.1 zipp-3.3.0

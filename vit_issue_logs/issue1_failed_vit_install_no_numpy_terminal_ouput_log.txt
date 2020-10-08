@@ -1,0 +1,187 @@
+matthew@goliath:~/Desktop/vitamin_local$ conda create --name=vit_local_env_2 python=3.6
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.3
+  latest version: 4.8.5
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/matthew/anaconda3/envs/vit_local_env_2
+
+  added / updated specs:
+    - python=3.6
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-1_gnu
+  ca-certificates    conda-forge/linux-64::ca-certificates-2020.6.20-hecda079_0
+  certifi            conda-forge/linux-64::certifi-2020.6.20-py36h9f0ad1d_0
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.35-h769bd43_9
+  libffi             conda-forge/linux-64::libffi-3.2.1-he1b5a44_1007
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-9.3.0-h5dbcf3e_17
+  libgomp            conda-forge/linux-64::libgomp-9.3.0-h5dbcf3e_17
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-9.3.0-h2ae2ef3_17
+  ncurses            conda-forge/linux-64::ncurses-6.2-he1b5a44_1
+  openssl            conda-forge/linux-64::openssl-1.1.1h-h516909a_0
+  pip                conda-forge/noarch::pip-20.2.3-py_0
+  python             conda-forge/linux-64::python-3.6.11-h4d41432_2_cpython
+  python_abi         conda-forge/linux-64::python_abi-3.6-1_cp36m
+  readline           conda-forge/linux-64::readline-8.0-he28a2e2_2
+  setuptools         conda-forge/linux-64::setuptools-49.6.0-py36h9f0ad1d_1
+  sqlite             conda-forge/linux-64::sqlite-3.33.0-h4cf870e_1
+  tk                 conda-forge/linux-64::tk-8.6.10-hed695b0_1
+  wheel              conda-forge/noarch::wheel-0.35.1-pyh9f0ad1d_0
+  xz                 conda-forge/linux-64::xz-5.2.5-h516909a_1
+  zlib               conda-forge/linux-64::zlib-1.2.11-h516909a_1009
+
+
+Proceed ([y]/n)? 
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate vit_local_env_2
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+matthew@goliath:~/Desktop/vitamin_local$ conda activate vit_local_env_2
+(vit_local_env_2) matthew@goliath:~/Desktop/vitamin_local$ pip install --upgrade pip
+Requirement already up-to-date: pip in /home/matthew/anaconda3/envs/vit_local_env_2/lib/python3.6/site-packages (20.2.3)
+(vit_local_env_2) matthew@goliath:~/Desktop/vitamin_local$ pip install vitamin-b
+Processing /home/matthew/.cache/pip/wheels/c2/2a/0d/744babf3b809dfb6fe04184d55ca4efeac6b14c4c8275d166b/vitamin_b-0.2.12-py3-none-any.whl
+Collecting h5py
+  Using cached h5py-2.10.0-cp36-cp36m-manylinux1_x86_64.whl (2.9 MB)
+Collecting astropy-healpix
+  Using cached astropy_healpix-0.5-cp36-cp36m-manylinux2010_x86_64.whl (204 kB)
+Collecting entrypoints
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Processing /home/matthew/.cache/pip/wheels/e5/9d/ad/2ee53cf262cba1ffd8afe1487eef788ea3f260b7e6232a80fc/PyYAML-5.3.1-cp36-cp36m-linux_x86_64.whl
+Collecting beautifulsoup4
+  Using cached beautifulsoup4-4.9.3-py3-none-any.whl (115 kB)
+Collecting emcee
+  Using cached emcee-3.0.2-py2.py3-none-any.whl (41 kB)
+Processing /home/matthew/.cache/pip/wheels/8f/ff/f6/1638318e640c6847dac798c3e20a5a8b5ddf88077bf3343dc4/lscsoft_glue-2.0.0-cp36-cp36m-linux_x86_64.whl
+Collecting pyaml
+  Using cached pyaml-20.4.0-py2.py3-none-any.whl (17 kB)
+Collecting six
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting Werkzeug
+  Using cached Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+Collecting asn1crypto
+  Using cached asn1crypto-1.4.0-py2.py3-none-any.whl (104 kB)
+Processing /home/matthew/.cache/pip/wheels/b2/81/be/b4d916ad8976ef27f7463d1619290ee2d2d0bd5b5400153d97/python_ligo_lw-1.6.0-cp36-cp36m-linux_x86_64.whl
+Collecting ligo.skymap
+  Using cached ligo.skymap-0.5.0-cp36-abi3-manylinux2014_x86_64.whl (19.3 MB)
+Collecting SecretStorage
+  Using cached SecretStorage-3.1.2-py3-none-any.whl (14 kB)
+Collecting cloudpickle
+  Using cached cloudpickle-1.6.0-py3-none-any.whl (23 kB)
+Collecting cryptography
+  Using cached cryptography-3.1.1-cp35-abi3-manylinux2010_x86_64.whl (2.6 MB)
+Collecting mock
+  Using cached mock-4.0.2-py3-none-any.whl (28 kB)
+Collecting tensorflow-estimator
+  Using cached tensorflow_estimator-2.3.0-py2.py3-none-any.whl (459 kB)
+Processing /home/matthew/.cache/pip/wheels/cf/77/54/00b34ca711998e113d04e8c645ffa3b0060bd951ec641de4b3/bilby-1.0.2-py3-none-any.whl
+Collecting oauthlib
+  Using cached oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)
+Collecting chardet
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Collecting cycler
+  Using cached cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting numexpr
+  Using cached numexpr-2.7.1-cp36-cp36m-manylinux1_x86_64.whl (162 kB)
+Processing /home/matthew/.cache/pip/wheels/6e/9c/ed/4499c9865ac1002697793e0ae05ba6be33553d098f3347fb94/future-0.18.2-py3-none-any.whl
+Collecting urllib3
+  Using cached urllib3-1.25.10-py2.py3-none-any.whl (127 kB)
+Collecting google-auth
+  Using cached google_auth-1.22.1-py2.py3-none-any.whl (114 kB)
+Collecting Keras
+  Using cached Keras-2.4.3-py2.py3-none-any.whl (36 kB)
+Collecting Keras-Applications
+  Using cached Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+Collecting webencodings
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting protobuf
+  Using cached protobuf-3.13.0-cp36-cp36m-manylinux1_x86_64.whl (1.3 MB)
+Collecting idna
+  Using cached idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting kiwisolver
+  Using cached kiwisolver-1.2.0-cp36-cp36m-manylinux1_x86_64.whl (88 kB)
+Collecting gwosc
+  Using cached gwosc-0.5.6-py3-none-any.whl (32 kB)
+Processing /home/matthew/.cache/pip/wheels/37/b2/48/a77cd267c62ad6bd6b1285e9d84a8f8a231998fa18f235d676/ligo_gracedb-2.7.0-py2.py3-none-any.whl
+Collecting scipy
+  Using cached scipy-1.5.2-cp36-cp36m-manylinux1_x86_64.whl (25.9 MB)
+Collecting pyasn1
+  Using cached pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+Processing /home/matthew/.cache/pip/wheels/02/49/cf/660924cd9bc5fcddc3a0246fe39800c83028d3ccea244de352/dill-0.3.2-py3-none-any.whl
+Collecting Cython
+  Using cached Cython-0.29.21-cp36-cp36m-manylinux1_x86_64.whl (2.0 MB)
+Collecting pyOpenSSL
+  Using cached pyOpenSSL-19.1.0-py2.py3-none-any.whl (53 kB)
+Collecting gwdatafind
+  Using cached gwdatafind-1.0.4-py2.py3-none-any.whl (38 kB)
+Collecting decorator
+  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting seaborn
+  Using cached seaborn-0.11.0-py3-none-any.whl (283 kB)
+Collecting html5lib
+  Using cached html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Collecting rsa
+  Using cached rsa-4.6-py3-none-any.whl (47 kB)
+Collecting python-dateutil
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting Markdown
+  Using cached Markdown-3.3-py3-none-any.whl (94 kB)
+Processing /home/matthew/.cache/pip/wheels/70/78/91/a96dca7e08bfa188b541579b1a1af571354f93366dd0d69807/astroquery-0.4.1-py3-none-any.whl
+Collecting lalsuite
+  Using cached lalsuite-6.77-cp36-cp36m-manylinux2014_x86_64.whl (27.2 MB)
+Collecting google-pasta
+  Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting Keras-Preprocessing
+  Using cached Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+Collecting dynesty
+  Using cached dynesty-1.0.1-py2.py3-none-any.whl (86 kB)
+Collecting ligotimegps
+  Using cached ligotimegps-2.0.1-py2.py3-none-any.whl (19 kB)
+Collecting opt-einsum
+  Using cached opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+Collecting astropy
+  Using cached astropy-4.0.1.post1-cp36-cp36m-manylinux1_x86_64.whl (6.5 MB)
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting pyparsing
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting gwpy
+  Using cached gwpy-2.0.1-py2.py3-none-any.whl (1.4 MB)
+Collecting cpnest
+  Using cached cpnest-0.9.9.tar.gz (24 kB)
+    ERROR: Command errored out with exit status 1:
+     command: /home/matthew/anaconda3/envs/vit_local_env_2/bin/python3.6 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-oclqfmk0/cpnest/setup.py'"'"'; __file__='"'"'/tmp/pip-install-oclqfmk0/cpnest/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-ku4o49v_
+         cwd: /tmp/pip-install-oclqfmk0/cpnest/
+    Complete output (5 lines):
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-oclqfmk0/cpnest/setup.py", line 2, in <module>
+        import numpy
+    ModuleNotFoundError: No module named 'numpy'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+(vit_local_env_2) matthew@goliath:~/Desktop/vitamin_local$ 

@@ -1,0 +1,410 @@
+matthew@goliath:~/Desktop/vitamin_local$ virtualenv -p python3.6 ./.vit/
+created virtual environment CPython3.6.9.final.0-64 in 934ms
+  creator CPython3Posix(dest=/home/matthew/Desktop/vitamin_local/.vit, clear=False, global=False)
+  seeder FromAppData(download=False, CacheControl=latest, distlib=latest, contextlib2=latest, setuptools=latest, wheel=latest, six=latest, distro=latest, pytoml=latest, progress=latest, msgpack=latest, packaging=latest, urllib3=latest, appdirs=latest, html5lib=latest, certifi=latest, chardet=latest, pkg_resources=latest, pyparsing=latest, pep517=latest, retrying=latest, requests=latest, webencodings=latest, idna=latest, lockfile=latest, ipaddr=latest, colorama=latest, pip=latest, via=copy, app_data_dir=/home/matthew/.local/share/virtualenv/seed-app-data/v1.0.1.debian)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+matthew@goliath:~/Desktop/vitamin_local$ cd .vit/
+
+matthew@goliath:~/Desktop/vitamin_local/.vit$ source bin/activate
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ pip install --upgrade pip
+Collecting pip
+  Downloading pip-20.2.3-py2.py3-none-any.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 1.7 MB/s 
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.0.2
+    Uninstalling pip-20.0.2:
+      Successfully uninstalled pip-20.0.2
+Successfully installed pip-20.2.3
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ which pip
+/home/matthew/Desktop/vitamin_local/.vit/bin/pip
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ pip --version
+pip 20.2.3 from /home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/pip (python 3.6)
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ pip install vitamin_b
+Processing /home/matthew/.cache/pip/wheels/c2/2a/0d/744babf3b809dfb6fe04184d55ca4efeac6b14c4c8275d166b/vitamin_b-0.2.12-py3-none-any.whl
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting reproject
+  Using cached reproject-0.7.1-cp36-cp36m-manylinux2010_x86_64.whl (1.3 MB)
+Collecting tqdm
+  Using cached tqdm-4.50.1-py2.py3-none-any.whl (70 kB)
+Collecting cachetools
+  Using cached cachetools-4.1.1-py3-none-any.whl (10 kB)
+Collecting google-auth
+  Using cached google_auth-1.22.1-py2.py3-none-any.whl (114 kB)
+Collecting tensorflow-probability==0.9.0
+  Using cached tensorflow_probability-0.9.0-py2.py3-none-any.whl (3.2 MB)
+Processing /home/matthew/.cache/pip/wheels/32/42/7f/23cae9ff6ef66798d00dc5d659088e57dbba01566f6c60db63/wrapt-1.12.1-cp36-cp36m-linux_x86_64.whl
+Collecting cpnest
+  Using cached cpnest-0.9.9.tar.gz (24 kB)
+    ERROR: Command errored out with exit status 1:
+     command: /home/matthew/Desktop/vitamin_local/.vit/bin/python -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-jpwkxabz/cpnest/setup.py'"'"'; __file__='"'"'/tmp/pip-install-jpwkxabz/cpnest/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-9eo3nusw
+         cwd: /tmp/pip-install-jpwkxabz/cpnest/
+    Complete output (5 lines):
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-jpwkxabz/cpnest/setup.py", line 2, in <module>
+        import numpy
+    ModuleNotFoundError: No module named 'numpy'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ python --version
+Python 3.6.9
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ pip install numpy==1.18.4
+Collecting numpy==1.18.4
+  Using cached numpy-1.18.4-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.18.4
+
+(.vit) matthew@goliath:~/Desktop/vitamin_local/.vit$ pip install vitamin_b
+Processing /home/matthew/.cache/pip/wheels/c2/2a/0d/744babf3b809dfb6fe04184d55ca4efeac6b14c4c8275d166b/vitamin_b-0.2.12-py3-none-any.whl
+Requirement already satisfied: urllib3 in ./lib/python3.6/site-packages (from vitamin_b) (1.25.8)
+Collecting scikit-optimize
+  Using cached scikit_optimize-0.8.1-py2.py3-none-any.whl (101 kB)
+Collecting astor
+  Using cached astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Collecting pyasn1-modules
+  Using cached pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+Collecting networkx
+  Using cached networkx-2.5-py3-none-any.whl (1.6 MB)
+Collecting entrypoints
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting matplotlib
+  Using cached matplotlib-3.3.2-cp36-cp36m-manylinux1_x86_64.whl (11.6 MB)
+Collecting rsa
+  Using cached rsa-4.6-py3-none-any.whl (47 kB)
+Collecting astropy-healpix
+  Using cached astropy_healpix-0.5-cp36-cp36m-manylinux2010_x86_64.whl (204 kB)
+Collecting beautifulsoup4
+  Using cached beautifulsoup4-4.9.3-py3-none-any.whl (115 kB)
+Collecting corner
+  Using cached corner-2.1.0-py2.py3-none-any.whl (11 kB)
+Collecting requests-oauthlib
+  Using cached requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Collecting pymc3
+  Using cached pymc3-3.9.3-py3-none-any.whl (1.9 MB)
+Collecting astropy
+  Using cached astropy-4.0.1.post1-cp36-cp36m-manylinux1_x86_64.whl (6.5 MB)
+Collecting absl-py
+  Using cached absl_py-0.10.0-py3-none-any.whl (127 kB)
+Collecting gast
+  Using cached gast-0.4.0-py3-none-any.whl (9.8 kB)
+Requirement already satisfied: numpy in ./lib/python3.6/site-packages (from vitamin_b) (1.18.4)
+Processing /home/matthew/.cache/pip/wheels/6e/9c/ed/4499c9865ac1002697793e0ae05ba6be33553d098f3347fb94/future-0.18.2-py3-none-any.whl
+Collecting cffi
+  Using cached cffi-1.14.3-cp36-cp36m-manylinux1_x86_64.whl (400 kB)
+Collecting Keras-Applications
+  Using cached Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+Collecting gwdatafind
+  Using cached gwdatafind-1.0.4-py2.py3-none-any.whl (38 kB)
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Requirement already satisfied: webencodings in ./lib/python3.6/site-packages (from vitamin_b) (0.5.1)
+Collecting Keras-Preprocessing
+  Using cached Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+Processing /home/matthew/.cache/pip/wheels/e5/9d/ad/2ee53cf262cba1ffd8afe1487eef788ea3f260b7e6232a80fc/PyYAML-5.3.1-cp36-cp36m-linux_x86_64.whl
+Collecting tensorboard
+  Using cached tensorboard-2.3.0-py3-none-any.whl (6.8 MB)
+Collecting ligo.skymap
+  Using cached ligo.skymap-0.5.0-cp36-abi3-manylinux2014_x86_64.whl (19.3 MB)
+Processing /home/matthew/.cache/pip/wheels/b2/81/be/b4d916ad8976ef27f7463d1619290ee2d2d0bd5b5400153d97/python_ligo_lw-1.6.0-cp36-cp36m-linux_x86_64.whl
+Processing /home/matthew/.cache/pip/wheels/93/2a/eb/e58dbcbc963549ee4f065ff80a59f274cc7210b6eab962acdc/termcolor-1.1.0-py3-none-any.whl
+Collecting ligotimegps
+  Using cached ligotimegps-2.0.1-py2.py3-none-any.whl (19 kB)
+Collecting opt-einsum
+  Using cached opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+Collecting joblib
+  Using cached joblib-0.17.0-py3-none-any.whl (301 kB)
+Collecting patsy
+  Using cached patsy-0.5.1-py2.py3-none-any.whl (231 kB)
+Collecting google-pasta
+  Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting tables
+  Using cached tables-3.6.1-cp36-cp36m-manylinux1_x86_64.whl (4.3 MB)
+Processing /home/matthew/.cache/pip/wheels/32/42/7f/23cae9ff6ef66798d00dc5d659088e57dbba01566f6c60db63/wrapt-1.12.1-cp36-cp36m-linux_x86_64.whl
+Collecting gwpy
+  Using cached gwpy-2.0.1-py2.py3-none-any.whl (1.4 MB)
+Collecting tqdm
+  Using cached tqdm-4.50.1-py2.py3-none-any.whl (70 kB)
+Collecting cryptography
+  Using cached cryptography-3.1.1-cp35-abi3-manylinux2010_x86_64.whl (2.6 MB)
+Collecting protobuf
+  Using cached protobuf-3.13.0-cp36-cp36m-manylinux1_x86_64.whl (1.3 MB)
+Collecting scikit-learn
+  Using cached scikit_learn-0.23.2-cp36-cp36m-manylinux1_x86_64.whl (6.8 MB)
+Collecting SecretStorage
+  Using cached SecretStorage-3.1.2-py3-none-any.whl (14 kB)
+Collecting asn1crypto
+  Using cached asn1crypto-1.4.0-py2.py3-none-any.whl (104 kB)
+Processing /home/matthew/.cache/pip/wheels/8f/ff/f6/1638318e640c6847dac798c3e20a5a8b5ddf88077bf3343dc4/lscsoft_glue-2.0.0-cp36-cp36m-linux_x86_64.whl
+Processing /home/matthew/.cache/pip/wheels/ba/c3/e0/ac1d1c87d9ba4a44c28b8ff6a2da6890a02098bf9546152971/ptemcee-1.0.0-py3-none-any.whl
+Collecting pytz
+  Using cached pytz-2020.1-py2.py3-none-any.whl (510 kB)
+Collecting pyaml
+  Using cached pyaml-20.4.0-py2.py3-none-any.whl (17 kB)
+Collecting pyasn1
+  Using cached pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+Collecting pyOpenSSL
+  Using cached pyOpenSSL-19.1.0-py2.py3-none-any.whl (53 kB)
+Collecting tensorflow==2.1.0
+  Using cached tensorflow-2.1.0-cp36-cp36m-manylinux2010_x86_64.whl (421.8 MB)
+Collecting seaborn
+  Using cached seaborn-0.11.0-py3-none-any.whl (283 kB)
+Collecting cycler
+  Using cached cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting Keras
+  Using cached Keras-2.4.3-py2.py3-none-any.whl (36 kB)
+Collecting cachetools
+  Using cached cachetools-4.1.1-py3-none-any.whl (10 kB)
+Requirement already satisfied: chardet in ./lib/python3.6/site-packages (from vitamin_b) (3.0.4)
+Collecting tensorflow-probability==0.9.0
+  Using cached tensorflow_probability-0.9.0-py2.py3-none-any.whl (3.2 MB)
+Processing /home/matthew/.cache/pip/wheels/80/84/f0/eb2e40b5fa19fe7302aa4accc73ec1aa58433fc57fd61ba9d0/universal_divergence-0.2.0-py3-none-any.whl
+Requirement already satisfied: certifi in ./lib/python3.6/site-packages (from vitamin_b) (2019.11.28)
+Collecting emcee
+  Using cached emcee-3.0.2-py2.py3-none-any.whl (41 kB)
+Collecting gwosc
+  Using cached gwosc-0.5.6-py3-none-any.whl (32 kB)
+Collecting cloudpickle
+  Using cached cloudpickle-1.6.0-py3-none-any.whl (23 kB)
+Collecting dqsegdb2
+  Using cached dqsegdb2-1.0.1-py2.py3-none-any.whl (21 kB)
+Processing /home/matthew/.cache/pip/wheels/8c/a8/f2/0bbd4c626ebca62b03d9897df74113c3748ce2d67af0b51073/ligo_segments-1.2.0-cp36-cp36m-linux_x86_64.whl
+Collecting google-auth
+  Using cached google_auth-1.22.1-py2.py3-none-any.whl (114 kB)
+Processing /home/matthew/.cache/pip/wheels/37/b2/48/a77cd267c62ad6bd6b1285e9d84a8f8a231998fa18f235d676/ligo_gracedb-2.7.0-py2.py3-none-any.whl
+Requirement already satisfied: html5lib in ./lib/python3.6/site-packages (from vitamin_b) (1.0.1)
+Collecting decorator
+  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting soupsieve
+  Using cached soupsieve-2.0.1-py3-none-any.whl (32 kB)
+Collecting deepdish
+  Using cached deepdish-0.3.6-py2.py3-none-any.whl (36 kB)
+Collecting grpcio
+  Using cached grpcio-1.32.0-cp36-cp36m-manylinux2014_x86_64.whl (3.8 MB)
+Collecting Cython
+  Using cached Cython-0.29.21-cp36-cp36m-manylinux1_x86_64.whl (2.0 MB)
+Collecting google-auth-oauthlib
+  Using cached google_auth_oauthlib-0.4.1-py2.py3-none-any.whl (18 kB)
+Collecting Pillow
+  Using cached Pillow-7.2.0-cp36-cp36m-manylinux1_x86_64.whl (2.2 MB)
+Collecting jeepney
+  Using cached jeepney-0.4.3-py3-none-any.whl (21 kB)
+Collecting pandas
+  Using cached pandas-1.1.3-cp36-cp36m-manylinux1_x86_64.whl (9.5 MB)
+Collecting dynesty
+  Using cached dynesty-1.0.1-py2.py3-none-any.whl (86 kB)
+Collecting healpy
+  Using cached healpy-1.14.0-cp36-cp36m-manylinux1_x86_64.whl (15.8 MB)
+Requirement already satisfied: idna in ./lib/python3.6/site-packages (from vitamin_b) (2.8)
+Collecting keyring
+  Using cached keyring-21.4.0-py3-none-any.whl (31 kB)
+Requirement already satisfied: requests in ./lib/python3.6/site-packages (from vitamin_b) (2.22.0)
+Processing /home/matthew/.cache/pip/wheels/70/78/91/a96dca7e08bfa188b541579b1a1af571354f93366dd0d69807/astroquery-0.4.1-py3-none-any.whl
+Collecting oauthlib
+  Using cached oauthlib-3.1.0-py2.py3-none-any.whl (147 kB)
+Collecting numexpr
+  Using cached numexpr-2.7.1-cp36-cp36m-manylinux1_x86_64.whl (162 kB)
+Processing /home/matthew/.cache/pip/wheels/cf/77/54/00b34ca711998e113d04e8c645ffa3b0060bd951ec641de4b3/bilby-1.0.2-py3-none-any.whl
+Collecting tensorflow-estimator
+  Using cached tensorflow_estimator-2.3.0-py2.py3-none-any.whl (459 kB)
+Collecting lalsuite
+  Using cached lalsuite-6.77-cp36-cp36m-manylinux2014_x86_64.whl (27.2 MB)
+Requirement already satisfied: six in ./lib/python3.6/site-packages (from vitamin_b) (1.14.0)
+Collecting python-dateutil
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting Werkzeug
+  Using cached Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+Processing /home/matthew/.cache/pip/wheels/02/49/cf/660924cd9bc5fcddc3a0246fe39800c83028d3ccea244de352/dill-0.3.2-py3-none-any.whl
+Requirement already satisfied: pyparsing in ./lib/python3.6/site-packages (from vitamin_b) (2.4.6)
+Collecting reproject
+  Using cached reproject-0.7.1-cp36-cp36m-manylinux2010_x86_64.whl (1.3 MB)
+Collecting kiwisolver
+  Using cached kiwisolver-1.2.0-cp36-cp36m-manylinux1_x86_64.whl (88 kB)
+Collecting scipy
+  Using cached scipy-1.5.2-cp36-cp36m-manylinux1_x86_64.whl (25.9 MB)
+Collecting cpnest
+  Using cached cpnest-0.9.9.tar.gz (24 kB)
+Collecting h5py
+  Using cached h5py-2.10.0-cp36-cp36m-manylinux1_x86_64.whl (2.9 MB)
+Collecting Markdown
+  Using cached Markdown-3.3-py3-none-any.whl (94 kB)
+Collecting mock
+  Using cached mock-4.0.2-py3-none-any.whl (28 kB)
+Collecting astroplan
+  Using cached astroplan-0.6-py3-none-any.whl (100 kB)
+Requirement already satisfied: setuptools>=40.6.0 in ./lib/python3.6/site-packages (from corner->vitamin_b) (44.0.0)
+Collecting setuptools-scm
+  Using cached setuptools_scm-4.1.2-py2.py3-none-any.whl (27 kB)
+Requirement already satisfied: wheel in ./lib/python3.6/site-packages (from corner->vitamin_b) (0.34.2)
+Collecting arviz>=0.9.0
+  Using cached arviz-0.10.0-py3-none-any.whl (1.5 MB)
+Collecting fastprogress>=0.2.0
+  Using cached fastprogress-1.0.0-py3-none-any.whl (12 kB)
+Processing /home/matthew/.cache/pip/wheels/41/11/53/911724983aa48deb94792432e14e518447212dd6c5477d49d3/contextvars-2.4-py3-none-any.whl
+Processing /home/matthew/.cache/pip/wheels/7f/80/57/2970ddd2e4961d84fb0d58196f4965deead046d29e08693e73/Theano-1.0.5-py3-none-any.whl
+Collecting dataclasses; python_version < "3.7"
+  Using cached dataclasses-0.7-py3-none-any.whl (18 kB)
+Collecting typing-extensions>=3.7.4
+  Using cached typing_extensions-3.7.4.3-py3-none-any.whl (22 kB)
+Collecting tensorboard-plugin-wit>=1.6.0
+  Using cached tensorboard_plugin_wit-1.7.0-py3-none-any.whl (779 kB)
+Collecting importlib-resources; python_version < "3.7"
+  Using cached importlib_resources-3.0.0-py2.py3-none-any.whl (23 kB)
+Collecting threadpoolctl>=2.0.0
+  Using cached threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting importlib-metadata; python_version < "3.8"
+  Using cached importlib_metadata-2.0.0-py2.py3-none-any.whl (31 kB)
+Requirement already satisfied: packaging in ./lib/python3.6/site-packages (from arviz>=0.9.0->pymc3->vitamin_b) (20.3)
+Collecting netcdf4
+  Using cached netCDF4-1.5.4-cp36-cp36m-manylinux1_x86_64.whl (4.3 MB)
+Collecting xarray>=0.16.1
+  Using cached xarray-0.16.1-py3-none-any.whl (720 kB)
+Collecting immutables>=0.9
+  Using cached immutables-0.14-cp36-cp36m-manylinux1_x86_64.whl (98 kB)
+Collecting zipp>=0.4; python_version < "3.8"
+  Using cached zipp-3.3.0-py3-none-any.whl (5.3 kB)
+Collecting cftime
+  Using cached cftime-1.2.1-cp36-cp36m-manylinux1_x86_64.whl (287 kB)
+Building wheels for collected packages: cpnest
+  Building wheel for cpnest (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/matthew/Desktop/vitamin_local/.vit/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7trenqli/cpnest/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7trenqli/cpnest/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-fg15y07i
+       cwd: /tmp/pip-install-7trenqli/cpnest/
+  Complete output (26 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.6
+  creating build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/model.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/plot.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/proposal.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/sampler.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/cpnest.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/nest2pos.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/logger.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/NestedSampling.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/__init__.py -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/parameter.pyx -> build/lib.linux-x86_64-3.6/cpnest
+  copying cpnest/parameter.pxd -> build/lib.linux-x86_64-3.6/cpnest
+  running build_ext
+  building 'cpnest.parameter' extension
+  creating build/temp.linux-x86_64-3.6
+  creating build/temp.linux-x86_64-3.6/cpnest
+  gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -Icpnest -I/home/matthew/Desktop/vitamin_local/.vit/include -I/usr/local/include/python3.6m -I/home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/numpy/core/include -c cpnest/parameter.c -o build/temp.linux-x86_64-3.6/cpnest/parameter.o
+  gcc: error: cpnest/parameter.c: No such file or directory
+  gcc: fatal error: no input files
+  compilation terminated.
+  error: command 'gcc' failed with exit status 1
+  ----------------------------------------
+  ERROR: Failed building wheel for cpnest
+  Running setup.py clean for cpnest
+Failed to build cpnest
+Installing collected packages: scipy, joblib, threadpoolctl, scikit-learn, PyYAML, pyaml, scikit-optimize, astor, pyasn1, pyasn1-modules, decorator, networkx, entrypoints, cycler, kiwisolver, Pillow, python-dateutil, matplotlib, rsa, astropy, astropy-healpix, soupsieve, beautifulsoup4, setuptools-scm, corner, oauthlib, requests-oauthlib, pytz, pandas, cftime, netcdf4, xarray, arviz, fastprogress, immutables, contextvars, h5py, theano, patsy, dataclasses, typing-extensions, pymc3, absl-py, gast, future, pycparser, cffi, Keras-Applications, ligo-segments, cryptography, pyOpenSSL, gwdatafind, Keras-Preprocessing, cachetools, google-auth, Werkzeug, google-auth-oauthlib, protobuf, zipp, importlib-metadata, Markdown, tensorboard-plugin-wit, grpcio, tensorboard, ptemcee, healpy, lscsoft-glue, python-ligo-lw, astroplan, tqdm, reproject, ligo-gracedb, importlib-resources, lalsuite, ligo.skymap, termcolor, ligotimegps, opt-einsum, google-pasta, numexpr, tables, wrapt, gwosc, dqsegdb2, gwpy, jeepney, SecretStorage, asn1crypto, tensorflow-estimator, tensorflow, seaborn, Keras, cloudpickle, tensorflow-probability, universal-divergence, emcee, deepdish, Cython, dynesty, keyring, astroquery, dill, bilby, cpnest, mock, vitamin-b
+    Running setup.py install for cpnest ... error
+    ERROR: Command errored out with exit status 1:
+     command: /home/matthew/Desktop/vitamin_local/.vit/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7trenqli/cpnest/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7trenqli/cpnest/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-gtt285_j/install-record.txt --single-version-externally-managed --compile --install-headers /home/matthew/Desktop/vitamin_local/.vit/include/site/python3.6/cpnest
+         cwd: /tmp/pip-install-7trenqli/cpnest/
+    Complete output (91 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.6
+    creating build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/model.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/plot.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/proposal.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/sampler.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/cpnest.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/nest2pos.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/logger.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/NestedSampling.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/__init__.py -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/parameter.pyx -> build/lib.linux-x86_64-3.6/cpnest
+    copying cpnest/parameter.pxd -> build/lib.linux-x86_64-3.6/cpnest
+    running build_ext
+    cythoning cpnest/parameter.pyx to cpnest/parameter.c
+    /home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/Cython/Compiler/Main.py:369: FutureWarning: Cython directive 'language_level' not set, using 2 for now (Py2). This will change in a later release! File: /tmp/pip-install-7trenqli/cpnest/cpnest/parameter.pxd
+      tree = Parsing.p_module(s, pxd, full_module_name)
+    building 'cpnest.parameter' extension
+    creating build/temp.linux-x86_64-3.6
+    creating build/temp.linux-x86_64-3.6/cpnest
+    gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -Icpnest -I/home/matthew/Desktop/vitamin_local/.vit/include -I/usr/local/include/python3.6m -I/home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/numpy/core/include -c cpnest/parameter.c -o build/temp.linux-x86_64-3.6/cpnest/parameter.o
+    In file included from /home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1832,
+                     from /home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                     from /home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                     from cpnest/parameter.c:611:
+    /home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+       17 | #warning "Using deprecated NumPy API, disable it with " \
+          |  ^~~~~~~
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_16__add__’:
+    cpnest/parameter.c:3270:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     3270 |   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
+          |                                 ^
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_18__iadd__’:
+    cpnest/parameter.c:3397:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     3397 |   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
+          |                                 ^
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_22__isub__’:
+    cpnest/parameter.c:3721:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     3721 |   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
+          |                                 ^
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_24__mul__’:
+    cpnest/parameter.c:3857:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     3857 |   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
+          |                                 ^
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_26__imul__’:
+    cpnest/parameter.c:3973:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     3973 |   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
+          |                                 ^
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_28__truediv__’:
+    cpnest/parameter.c:4109:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     4109 |   for (__pyx_t_4 = 0; __pyx_t_4 < __pyx_t_3; __pyx_t_4+=1) {
+          |                                 ^
+    cpnest/parameter.c: In function ‘__pyx_pf_6cpnest_9parameter_9LivePoint_30__itruediv__’:
+    cpnest/parameter.c:4225:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+     4225 |   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
+          |                                 ^
+    gcc -pthread -shared build/temp.linux-x86_64-3.6/cpnest/parameter.o -lm -o build/lib.linux-x86_64-3.6/cpnest/parameter.cpython-36m-x86_64-linux-gnu.so
+    running install_lib
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-7trenqli/cpnest/setup.py", line 97, in <module>
+        ext_modules=ext_modules
+      File "/home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/setuptools/__init__.py", line 145, in setup
+        return distutils.core.setup(**attrs)
+      File "/usr/local/lib/python3.6/distutils/core.py", line 148, in setup
+        dist.run_commands()
+      File "/usr/local/lib/python3.6/distutils/dist.py", line 955, in run_commands
+        self.run_command(cmd)
+      File "/usr/local/lib/python3.6/distutils/dist.py", line 974, in run_command
+        cmd_obj.run()
+      File "/home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/setuptools/command/install.py", line 61, in run
+        return orig.install.run(self)
+      File "/usr/local/lib/python3.6/distutils/command/install.py", line 557, in run
+        self.run_command(cmd_name)
+      File "/usr/local/lib/python3.6/distutils/cmd.py", line 313, in run_command
+        self.distribution.run_command(command)
+      File "/usr/local/lib/python3.6/distutils/dist.py", line 973, in run_command
+        cmd_obj.ensure_finalized()
+      File "/usr/local/lib/python3.6/distutils/cmd.py", line 107, in ensure_finalized
+        self.finalize_options()
+      File "/home/matthew/Desktop/vitamin_local/.vit/lib/python3.6/site-packages/setuptools/command/install_lib.py", line 17, in finalize_options
+        self.set_undefined_options('install',('install_layout','install_layout'))
+      File "/usr/local/lib/python3.6/distutils/cmd.py", line 290, in set_undefined_options
+        setattr(self, dst_option, getattr(src_cmd_obj, src_option))
+      File "/usr/local/lib/python3.6/distutils/cmd.py", line 103, in __getattr__
+        raise AttributeError(attr)
+    AttributeError: install_layout
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /home/matthew/Desktop/vitamin_local/.vit/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7trenqli/cpnest/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7trenqli/cpnest/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-gtt285_j/install-record.txt --single-version-externally-managed --compile --install-headers /home/matthew/Desktop/vitamin_local/.vit/include/site/python3.6/cpnest Check the logs for full command output.
