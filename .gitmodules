@@ -1,0 +1,3 @@
+[submodule "vitamin_b"]
+	path = vitamin_b
+	url = git@github.com:mdochertyastro/vitamin_b.git
