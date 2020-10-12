@@ -1,3 +1,6 @@
 [submodule "vitamin_b"]
 	path = vitamin_b
 	url = git@github.com:mdochertyastro/vitamin_b.git
+[submodule "publications/msci_project_overleaf"]
+	path = publications/msci_project_overleaf
+	url = git@github.com:mdochertyastro/msci_project_overleaf.git
