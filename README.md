@@ -1,6 +1,6 @@
 # Matthew Docherty - Msci Project Status Folder
 
-## Repo to keep track of (non-programming) project general status.
+## Repo to keep track of COMPLETE status of project.
 
 **Includes:**
 
@@ -41,5 +41,6 @@ PROJECT DIRECTORY
         '------> Programming dir (Version controlled from another repo - all my jupyter notebooks for running ML and vit scripts from vscode jupyter server)
 
 ```
-
 Next step is to learn git submodules and have the my project webspace as one big repo (git ignoring conda envs for data rate still) and maintaining vit from within my project webspace - would this be too much data for 100gb git limit. Would forking be a better than cloning here?
+
+My second version with submodules has been implimented as of 12/10/20 - still need to decide on conda env webspace and other if I can code directly from branch of forked vit or not!
