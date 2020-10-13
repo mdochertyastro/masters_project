@@ -8,6 +8,6 @@
 
 ## Soon (once vit is running remotely)
 
-- **DIR** - conda_envs
+- **DIR** - conda_env_dir
   - **SUBDIR** - pkgs (_re-route from \$HOME/.conda/pkgs to prevent data-limit on wiay_)
   - **SUBDIR(S)** - conda envs (_As many as I need - will have alteast 4: Basic, vit, torch, tf and will need to do some conda config stuff to get these into env dirs etc (done it before))_)

@@ -58,7 +58,7 @@ Had first igr-data-ml club which was fun and more casual.
 ## Daily Goals:
 
 - [ ] Write up all meetings properly
-- [ ] Attempt vit CPU local with 2020 pip
+- [x] Attempt vit CPU local with 2020 pip
 - [ ] Get artciles from week2 meeting into folder
 - [ ] Get all articles' BibTeX and make a nice space for them
 - [ ] Finish overleaf setup
@@ -70,6 +70,17 @@ Time frame:
 **Evening** - vit coding
 
 ## End of Day Thoughts:
+
+Possible repo restructure as not sure if there is benefit of having submodules. Hunter has a single module with his env inside it and still makes pulls/pushes so Im waiting on his response n how he sets up his tree so might be worth just keeping the 3 sep repos.
+
+'PE' as in PE run stands for paramter estimation
+Coalsensce is just the merging of two objects in a single massive one
+
+for articles this looks like a good [starting point](https://inspirehep.net/literature/1663048) for its refs etc.
+
+For old school methods look at sampling channel on teams
+
+Got LIGO credentials and now have access to the [IGR gitlab](https://gilsay.physics.gla.ac.uk/gitlab/) and [IGR wiki](https://gilsay.physics.gla.ac.uk/dokuwiki/doku.php?do=index&id=igr-general)
 
 ## Morning Session:
 
