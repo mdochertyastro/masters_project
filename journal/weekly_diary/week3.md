@@ -105,13 +105,13 @@ Got LIGO credentials and now have access to the [IGR gitlab](https://gilsay.phys
 
 Last night got vit running locally for first time. Now thinking of restructure back to 3 individual repos (general project, vit, overleaf).
 
-Looking at hunter's two commits from last night [commit1](https://github.com/hagabbar/vitamin_b/commit/83f5313165d48a6fde05cc9bfc32766266897042) [commit2](https://github.com/hagabbar/vitamin_b/commit/586df2cf09aaa0b2f9f15c5678559cbcac71f836) he has unspecified package versions (so assuming latest available on pip) Note, cpnest was just updated last night by JOhn to v0.10.1 so this is working now. Wondering wether the whole pip situation works now inseatd of having to run ```pip install --use-feature=2020-resolver``` will see when I clone a new repo locally.
+Looking at hunter's two commits from last night [commit1](https://github.com/hagabbar/vitamin_b/commit/83f5313165d48a6fde05cc9bfc32766266897042) [commit2](https://github.com/hagabbar/vitamin_b/commit/586df2cf09aaa0b2f9f15c5678559cbcac71f836) he has unspecified package versions (so assuming latest available on pip) Note, cpnest was just updated last night by JOhn to v0.10.1 so this is working now. Wondering wether the whole pip situation works now inseatd of having to run `pip install --use-feature=2020-resolver` will see when I clone a new repo locally.
 
 - [ ] Want to remove submodules from golabl and rename them after food.
 
 ## Afternoon Session:
 
-About to do a fresh vit source install to see what errors come through after hunter anmd john's new over night commits. 
+About to do a fresh vit source install to see what errors come through after hunter anmd john's new over night commits.
 
 ## Evening Session:
 
@@ -129,17 +129,17 @@ About to do a fresh vit source install to see what errors come through after hun
 - [ ] get all bibtex for current artciles
 - [x] delete submodules and get 3 proper repos
 - [ ] start planning techpaper (set up planning webspace for 3 pubs)
+- [ ] set up a nice ordered database of articles and their bib's. Good names for each article followed by their link incase I lose track
 
 ## End of Day Thoughts:
 
-
 ## Morning Session:
-
 
 ## Afternoon Session:
 
+Talked to Hunter on teams and have some notes. First, he is happy and eager for me to translate it in Torch. (need to learn tf first to learn ML then specialise in torch.) Also, post-commits the cpnest and requirements.txt issues are solved and when the new pip-2020-resolver rolls out in a few weeks nopthing should break.
 
 ## Evening Session:
 
-
 ---
+
