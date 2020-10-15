@@ -139,6 +139,7 @@ Specific tasks:
 - [ ] source all articles (keep saying this over and over)
 - [ ] proper bibtex database with sensible naming conventions
 - [ ] by end of weekend have a clear skeleton for 7 pages. Note quicker start writing the easier!!!
+- [ ] spend time tomorrow prepping meeting.md for stuff to show Chris
 
 ## Morning Session:
 
