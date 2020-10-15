@@ -103,7 +103,15 @@ Got LIGO credentials and now have access to the [IGR gitlab](https://gilsay.phys
 
 ## Morning Session:
 
+Last night got vit running locally for first time. Now thinking of restructure back to 3 individual repos (general project, vit, overleaf).
+
+Looking at hunter's two commits from last night [commit1](https://github.com/hagabbar/vitamin_b/commit/83f5313165d48a6fde05cc9bfc32766266897042) [commit2](https://github.com/hagabbar/vitamin_b/commit/586df2cf09aaa0b2f9f15c5678559cbcac71f836) he has unspecified package versions (so assuming latest available on pip) Note, cpnest was just updated last night by JOhn to v0.10.1 so this is working now. Wondering wether the whole pip situation works now inseatd of having to run ```pip install --use-feature=2020-resolver``` will see when I clone a new repo locally.
+
+- [ ] Want to remove submodules from golabl and rename them after food.
+
 ## Afternoon Session:
+
+About to do a fresh vit source install to see what errors come through after hunter anmd john's new over night commits. 
 
 ## Evening Session:
 
