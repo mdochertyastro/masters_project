@@ -121,7 +121,7 @@ About to do a fresh vit source install to see what errors come through after hun
 
 ## Daily Goals:
 
-- [ ] set up latex template for techpaper (1col) and report (2col)
+- [x] set up latex template for techpaper (1col) and report (2col)
 - [ ] experiment with branch merging with different folders in branch etc
 - [ ] set up tut branch and start going through line by line
 - [ ] plan my ML roadmap personally in the evenings
@@ -133,6 +133,13 @@ About to do a fresh vit source install to see what errors come through after hun
 
 ## End of Day Thoughts:
 
+Tomorrow want to email the quantum prof for speaking advice and his slides.
+General GOAL: big tech paper push over weekend+nextweek. (now have vit running the pressure's off)
+Specific tasks:
+- [ ] source all articles (keep saying this over and over)
+- [ ] proper bibtex database with sensible naming conventions
+- [ ] by end of weekend have a clear skeleton for 7 pages. Note quicker start writing the easier!!!
+
 ## Morning Session:
 
 ## Afternoon Session:
@@ -140,6 +147,9 @@ About to do a fresh vit source install to see what errors come through after hun
 Talked to Hunter on teams and have some notes. First, he is happy and eager for me to translate it in Torch. (need to learn tf first to learn ML then specialise in torch.) Also, post-commits the cpnest and requirements.txt issues are solved and when the new pip-2020-resolver rolls out in a few weeks nopthing should break.
 
 ## Evening Session:
+
+I believe I have a final overleaf template for all 3 pubs. Tomorrow work on articles and bibTEx (big artciles push over weekend with learning tf on the horizon) 
+
 
 ---
 
