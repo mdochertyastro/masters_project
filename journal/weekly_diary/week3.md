@@ -23,7 +23,7 @@
 
 ---
 
-# MONDAY 12TH OCTOBER
+# MONDAY 12TH October
 
 ## Daily Goals:
 
@@ -114,5 +114,32 @@ Looking at hunter's two commits from last night [commit1](https://github.com/hag
 About to do a fresh vit source install to see what errors come through after hunter anmd john's new over night commits. 
 
 ## Evening Session:
+
+---
+
+# Thursday 15th October
+
+## Daily Goals:
+
+- [ ] set up latex template for techpaper (1col) and report (2col)
+- [ ] experiment with branch merging with different folders in branch etc
+- [ ] set up tut branch and start going through line by line
+- [ ] plan my ML roadmap personally in the evenings
+- [ ] source all artciles mentioned in meetins (updating the catalogue one chris linked in OG email)
+- [ ] get all bibtex for current artciles
+- [x] delete submodules and get 3 proper repos
+- [ ] start planning techpaper (set up planning webspace for 3 pubs)
+
+## End of Day Thoughts:
+
+
+## Morning Session:
+
+
+## Afternoon Session:
+
+
+## Evening Session:
+
 
 ---
