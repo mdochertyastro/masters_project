@@ -53,6 +53,8 @@ This is a one-stop-shop for all coding snippets, ideas and research (trying to r
 - [ ] class inheritance, methods and atributes and the self thingy
 - [ ] package releases
 - [ ] numpy stack
+- [ ] raising own errors
+- [ ] pipeline (docker, elyra, kubeflow etc)
 
 ### 4. Git
 

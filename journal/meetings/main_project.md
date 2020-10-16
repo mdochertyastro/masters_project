@@ -10,9 +10,22 @@
 - My aim is to eventually be a front-end vit_b developer
 
 - 2 main problems with vit (my project is to fix as many of these as poss):
+
   1. DATA-RATE - make wavefront longer for NS obs.
+
+     - want to make it deal with longer signals current is 1s at 1kHz sampling freq (Nyquist freq)
+     - goal is 1000secs so can do longer coalesence of NS as they are less massive they have a longer duration of inspiral but they are of more use for other probing techniques due to their EM transmittion
+     - whats stopping the 1000s so far is training time limit (currently ~1day) and memory limit.
+
   2. NOISE
+
+     - been using Gaussian noise up until this point for simulations
+     - transient glitches in noise is from detecotrs and is very non-gaussian
+     - power spectral density estimation (noise curve)
+
   3. (Optional) convert vitamin from tf2 to torch
+
+- Output of vit is 15 posteriors
 
 ## Post-meeting tasks:
 
@@ -63,7 +76,8 @@
 - literature work:
   - Shultz? Grav wave living reviews
   - Catalog 01 02 (11 detections from the two runs combined) GWTCL
-  - https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.123017  <-- this is for new first project
+  - https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.123017 <-- this is for new first project
+
 ## Post-meeting tasks:
 
 - find out what a CVAE is (seems VERY IMPORTANT)
@@ -84,6 +98,36 @@
 - read and write up all papers i have currently in onedrive (~10)
 - have made my mind up with webspace either using git submodules or not
 - a significant amount of tf and torch practise
+
+## Questions for next meeting:
+
+---
+
+# Meeting 3 - 16/10/20
+
+## Pre-meeting notes:
+
+### Things achieved this week:
+
+- [x] got vitmain running from source
+- [x] set up my overleaf templates for 3 assessments (time consuming)
+- [x] got credentials for IGR wiki and gitlab from jamie
+- [x] set up final 3 repos with good structue (decided no need for submodules)
+- [x] pulled new commits from vit successfully for first time
+
+### Things currently working on:
+
+- [ ] practising branching
+- [ ] tech paper focus this whole week (will have good template by end of this weekend)
+- [ ] learning tf seperately to learn ML (then learn torch after I have ML concepts down)
+- [ ] artcile focus this coming week with good bibtex database and naming conventions
+- [ ] 
+
+### Things I want to bring up:
+
+## Meeting Minutes:
+
+## Post-meeting tasks:
 
 ## Questions for next meeting:
 

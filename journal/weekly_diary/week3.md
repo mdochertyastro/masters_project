@@ -6,9 +6,9 @@
 
 ## On-task:
 
-- [ ] Set up Overleaf project for 3 publications
-- [ ] **Get vit running w/o jupyter**
-- [ ] Set up github repo completely with submodules (forked from Hunter)
+- [x] Set up Overleaf project for 3 publications
+- [x] **Get vit running w/o jupyter**
+- [x] Set up github repo completely with submodules (forked from Hunter)
 - [ ] Branch vit and make line by line tutorial
 - [ ] Practise tf and torch from random tut
 - [ ] Read, annotate and write-up all OneNote papers and log their BiBTeX neatly
