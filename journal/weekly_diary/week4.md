@@ -2,6 +2,12 @@
 
 # BIG WEEKLY GOALS
 
+- [ ] recap last weeks' meeting with Chris with vit paper
+- [ ] make my own training set overnight
+- [ ] all BibTeX of compiled articles into a database
+- [ ] by meeting, have a good plan for tech paper
+- [ ] start tf tutoirals from scratch good progress this week (at night)
+
 # Monday 19th October
 
 ## Daily Goals:

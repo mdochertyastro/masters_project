@@ -24,6 +24,8 @@ This is a one-stop-shop for all coding snippets, ideas and research (trying to r
 
 ### 6. VS Code
 
+### 7. Vitamin
+
 ---
 
 ## Things I want to research:
@@ -60,7 +62,6 @@ This is a one-stop-shop for all coding snippets, ideas and research (trying to r
 
 - [ ] branching
 - [ ] forking
-- [ ] submodules
 - [ ] remotes
 - [ ] pull/push
 - [ ] fetch
@@ -73,6 +74,8 @@ This is a one-stop-shop for all coding snippets, ideas and research (trying to r
 -
 
 ### 6. VS Code
+
+### 7. Vitamin
 
 ---
 
@@ -209,6 +212,23 @@ home_test  python_interpreter  vitamin_local
 ---
 
 # 4. Git
+
+## Remotes
+
+## Branching/Merging
+
+**General branching workflow:**
+
+Create branch: ```git branch <branch name>```
+Select branch ```git checkout <branch name>```
+
+*Make changes inside < branch name > then commit locally*
+
+Push to remote after commit ```git push -u origin <branch name>```
+
+*After happy with changes checkout master and pull*
+
+## Pull/Fetch
 
 - git pull = git fetch + git merge
 
